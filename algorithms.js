@@ -46,3 +46,20 @@ function sumDouble(a, b){
 }
 
 console.log(sumDouble(3, 3));
+
+// Warmup 1.4
+// function diff21(n){
+//     if(n <= 21){
+//         return 21 - n;
+//     } else{
+//         return (n - 21) * 2;
+//     }
+// }
+
+function diff21(n){
+    return n <= 21 ? 21 - n : (n - 21) * 2;
+}
+
+console.log(diff21(25));
+
+// Warmup 1.5
