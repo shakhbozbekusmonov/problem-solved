@@ -103,3 +103,22 @@ function makes10(a, b){
 }
 
 console.log(makes10(9, 1));
+
+// Warmup 1.7
+// function nearHundred(n){
+//     let result1 = Math.abs(100 - n);
+//     let result2 = Math.abs(200 - n);
+//     if( result1 <= 10 || result2 <= 10) {
+//         return true;
+//     }else {
+//         return false;
+//     }
+// }
+
+function nearHundred(n){
+    let result1 = Math.abs(100 - n);
+    let result2 = Math.abs(200 - n);
+    return result1 <= 10 || result2 <= 10;
+}
+
+console.log(nearHundred(190));
