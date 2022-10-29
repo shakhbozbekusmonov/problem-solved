@@ -63,3 +63,26 @@ function diff21(n){
 console.log(diff21(25));
 
 // Warmup 1.5
+// function parrotTrouble(talking, hour){
+//     if(talking === true && hour < 7 || hour > 20){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// function parrotTrouble(talking, hour){
+//     if(talking && hour < 7 || hour > 20){
+//                 return true;
+//             } else {
+//                 return false;
+//             }
+// }
+
+function parrotTrouble(talking, hour){
+    return (talking && hour < 7 || hour > 20) ? true : false;
+}
+
+console.log(parrotTrouble(false, 6));
+
+// Warmup 1.6
