@@ -122,3 +122,32 @@ function nearHundred(n){
 }
 
 console.log(nearHundred(190));
+
+// Warmup 1.8
+// function posNeg(a, b, negative){
+//     if((a > 0 && b < 0 || a < 0 && b > 0) && negative === false){
+//         return true;
+//     } else if (a < 0 && b < 0 && negative === true){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// function posNeg(a, b, negative){
+//     if(((a > 0 && b < 0 || a < 0 && b > 0) && !negative) || (a < 0 && b < 0 && negative)){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// function posNeg(a, b, negative){
+//     return ((a > 0 && b < 0 || a < 0 && b > 0) && !negative) || (a < 0 && b < 0 && negative) ? true : false;
+// }
+
+function posNeg(a, b, negative){
+    return ((a > 0 && b < 0 || a < 0 && b > 0) && !negative) || (a < 0 && b < 0 && negative);
+}
+
+console.log(posNeg(-1, -1, false));
