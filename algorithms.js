@@ -210,3 +210,18 @@ function backAround(str){
 }
 
 console.log(backAround("cat"));
+
+// Warmup 1.14
+// function or35(n){
+//     if(n % 3 === 0 || n % 5 === 0){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+function or35(n){
+    return (n % 3 === 0 || n % 5 === 0) ? true : false;
+}
+
+console.log(or35(10));
