@@ -190,3 +190,14 @@ function frontBack(str){
 }
 
 console.log(frontBack("code"));
+
+// Warmup 1.12
+// function front3(str){
+//     return str.slice(0, 3) + str.slice(0, 3) + str.slice(0, 3);
+// }
+
+function front3(str){
+    return str.slice(0, 3).repeat(3);
+}
+
+console.log(front3("Javascript"));
