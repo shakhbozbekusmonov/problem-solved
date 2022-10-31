@@ -151,3 +151,26 @@ function posNeg(a, b, negative){
 }
 
 console.log(posNeg(-1, -1, false));
+
+// Warmup 1.9
+// function notString(str){
+//     if(str.slice(0, 3) === "not"){
+//         return str;
+//     } else {
+//         return "not " + str;
+//     }
+// }
+
+// function notString(str){
+//     if(str.startsWith("not")){
+//         return str;
+//     } else {
+//         return "not " + str;
+//     }
+// }
+
+function notString(str){
+    return str.startsWith("not") ? str : "not " + str;
+}
+
+console.log(notString("not x"));
