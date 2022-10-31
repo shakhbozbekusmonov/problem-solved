@@ -201,3 +201,12 @@ function front3(str){
 }
 
 console.log(front3("Javascript"));
+
+// Warmup 1.13
+function backAround(str){
+    if(str.length > 1){
+        return str.slice(-1) + str + str.slice(-1);
+    }
+}
+
+console.log(backAround("cat"));
