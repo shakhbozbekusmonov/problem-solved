@@ -174,3 +174,12 @@ function notString(str){
 }
 
 console.log(notString("not x"));
+
+// Warmup 1.10
+// function missingChar(str, n){
+//     let str1 = str.slice(0, n);
+//     let str2 = str.slice(n + 1,);
+//     return str1 + str2;
+// }
+
+console.log(missingChar("kitten", 3));
