@@ -225,3 +225,10 @@ function or35(n){
 }
 
 console.log(or35(10));
+
+// Warmup 1.15
+function front22(str){
+    return str.slice(0, 2) + str + str.slice(0, 2);
+}
+
+console.log(front22("kitten"));
