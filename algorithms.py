@@ -28,3 +28,12 @@ def monkey_trouble(aSmile, bSmile):
     return (aSmile and bSmile) or (not aSmile and not bSmile)
 
 print(monkey_trouble(True, True));
+
+# Warmup 1.3
+def sum_double(a, b):
+    if (a == b):
+        return (a + b) * 2
+    else:
+        return (a + b)
+    
+print(sum_double(3, 3))
