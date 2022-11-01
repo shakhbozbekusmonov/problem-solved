@@ -37,3 +37,12 @@ def sum_double(a, b):
         return (a + b)
     
 print(sum_double(3, 3))
+
+# Warmup 1.4
+def diff_21(n):
+    if (n <= 21):
+        return 21 - n
+    else:
+        return (n - 21) * 2
+    
+print(diff_21(25))
