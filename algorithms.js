@@ -232,3 +232,18 @@ function front22(str){
 }
 
 console.log(front22("kitten"));
+
+// Warmup 1.16
+// function startHi(str){
+//     if(str.slice(0, 2) === "hi"){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+function startHi(str){
+    return str.startsWith("hi");
+}
+
+console.log(startHi("there"));
