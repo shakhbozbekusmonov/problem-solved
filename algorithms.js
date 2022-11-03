@@ -295,3 +295,24 @@ function hasTeen(a, b, c){
 }
 
 console.log(hasTeen(13, 20, 10));
+
+// Warmup 1.20
+// function loneTeen(a, b){
+//     if(((a >= 13 && b < 13) || (a <= 19 && b > 19)) || ((a < 13 && b >= 13) || (a > 19 && b <= 19))){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// function loneTeen(a, b) {
+//     let aTeen = (a >= 13 && a <= 19);
+//     let bTeen = (b >= 13 && b <= 19);
+//     return (aTeen && !bTeen) || (!aTeen && bTeen);
+// }
+
+function loneTeen(a, b){
+    return (((a >= 13 && b < 13) || (a <= 19 && b > 19)) || ((a < 13 && b >= 13) || (a > 19 && b <= 19)));
+}
+
+console.log(loneTeen(13, 13));
