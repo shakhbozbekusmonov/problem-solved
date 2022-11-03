@@ -262,3 +262,18 @@ function icyHot(temp1, temp2){
 }
 
 console.log(icyHot(-120, 1));
+
+// Warmup 1.18
+// function in1020(a, b){
+//     if((a >= 10 && b >= 10) || (a <= 20 && b <= 20)){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+function in1020(a, b){
+    return ((a >= 10 && a <= 20) || (b >= 10 && b <= 20));
+}
+
+console.log(in1020(12, 99));
