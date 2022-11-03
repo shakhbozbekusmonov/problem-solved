@@ -316,3 +316,22 @@ function loneTeen(a, b){
 }
 
 console.log(loneTeen(13, 13));
+
+// Warmup 1.21
+// function delDel(str){
+//     if(str.slice(1, 4) === "del"){
+//         return str.slice(0, 1) + str.slice(4);
+//     } else {
+//         return str;
+//     }
+// }
+
+function delDel(str){
+    if(str.startsWith("del", 1)){
+        return str.slice(0, 1) + str.slice(4);
+    } else {
+        return str;
+    }
+}
+
+console.log(delDel("adelbc"));
