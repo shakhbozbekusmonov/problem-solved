@@ -11,8 +11,8 @@
 //     }
 // }
 
-function sleepIn(weekDay, vacation){
-    return (!weekDay && !weekDay) || (!weekDay && vacation) ? true : false;
+function sleepIn(weekDay, vacation) {
+  return (!weekDay && !weekDay) || (!weekDay && vacation) ? true : false;
 }
 
 console.log(sleepIn(true, true));
@@ -26,8 +26,8 @@ console.log(sleepIn(true, true));
 //     }
 // }
 
-function monkeyTrouble(aSmile, bSmile){
-    return (aSmile && bSmile) || (!aSmile && !bSmile) ? true : false;
+function monkeyTrouble(aSmile, bSmile) {
+  return (aSmile && bSmile) || (!aSmile && !bSmile) ? true : false;
 }
 
 console.log(monkeyTrouble(true, true));
@@ -41,8 +41,8 @@ console.log(monkeyTrouble(true, true));
 //     }
 // }
 
-function sumDouble(a, b){
-    return (a === b) ? (a + b) * 2 : (a + b);
+function sumDouble(a, b) {
+  return a === b ? (a + b) * 2 : a + b;
 }
 
 console.log(sumDouble(3, 3));
@@ -56,8 +56,8 @@ console.log(sumDouble(3, 3));
 //     }
 // }
 
-function diff21(n){
-    return n <= 21 ? 21 - n : (n - 21) * 2;
+function diff21(n) {
+  return n <= 21 ? 21 - n : (n - 21) * 2;
 }
 
 console.log(diff21(25));
@@ -79,8 +79,8 @@ console.log(diff21(25));
 //             }
 // }
 
-function parrotTrouble(talking, hour){
-    return (talking && hour < 7 || hour > 20) ? true : false;
+function parrotTrouble(talking, hour) {
+  return (talking && hour < 7) || hour > 20 ? true : false;
 }
 
 console.log(parrotTrouble(false, 6));
@@ -98,8 +98,8 @@ console.log(parrotTrouble(false, 6));
 //     return (a === 10 && b !== 10 || a !== 10 && b === 10) || (a + b === 10) ? true : false;
 // }
 
-function makes10(a, b){
-    return (a === 10 && b !== 10 || a !== 10 && b === 10) || (a + b === 10);
+function makes10(a, b) {
+  return (a === 10 && b !== 10) || (a !== 10 && b === 10) || a + b === 10;
 }
 
 console.log(makes10(9, 1));
@@ -115,10 +115,10 @@ console.log(makes10(9, 1));
 //     }
 // }
 
-function nearHundred(n){
-    let result1 = Math.abs(100 - n);
-    let result2 = Math.abs(200 - n);
-    return result1 <= 10 || result2 <= 10;
+function nearHundred(n) {
+  let result1 = Math.abs(100 - n);
+  let result2 = Math.abs(200 - n);
+  return result1 <= 10 || result2 <= 10;
 }
 
 console.log(nearHundred(190));
@@ -146,8 +146,11 @@ console.log(nearHundred(190));
 //     return ((a > 0 && b < 0 || a < 0 && b > 0) && !negative) || (a < 0 && b < 0 && negative) ? true : false;
 // }
 
-function posNeg(a, b, negative){
-    return ((a > 0 && b < 0 || a < 0 && b > 0) && !negative) || (a < 0 && b < 0 && negative);
+function posNeg(a, b, negative) {
+  return (
+    (((a > 0 && b < 0) || (a < 0 && b > 0)) && !negative) ||
+    (a < 0 && b < 0 && negative)
+  );
 }
 
 console.log(posNeg(-1, -1, false));
@@ -169,24 +172,24 @@ console.log(posNeg(-1, -1, false));
 //     }
 // }
 
-function notString(str){
-    return str.startsWith("not") ? str : "not " + str;
+function notString(str) {
+  return str.startsWith("not") ? str : "not " + str;
 }
 
 console.log(notString("not x"));
 
 // Warmup 1.10
-function missingChar(str, n){
-    let str1 = str.slice(0, n);
-    let str2 = str.slice(n + 1,);
-    return str1 + str2;
+function missingChar(str, n) {
+  let str1 = str.slice(0, n);
+  let str2 = str.slice(n + 1);
+  return str1 + str2;
 }
 
 console.log(missingChar("kitten", 3));
 
 // Warmup 1.11
-function frontBack(str){
-    return str.slice(-1) + str.slice(1, -1) + str.slice(0, 1);
+function frontBack(str) {
+  return str.slice(-1) + str.slice(1, -1) + str.slice(0, 1);
 }
 
 console.log(frontBack("code"));
@@ -196,17 +199,17 @@ console.log(frontBack("code"));
 //     return str.slice(0, 3) + str.slice(0, 3) + str.slice(0, 3);
 // }
 
-function front3(str){
-    return str.slice(0, 3).repeat(3);
+function front3(str) {
+  return str.slice(0, 3).repeat(3);
 }
 
 console.log(front3("Javascript"));
 
 // Warmup 1.13
-function backAround(str){
-    if(str.length > 1){
-        return str.slice(-1) + str + str.slice(-1);
-    }
+function backAround(str) {
+  if (str.length > 1) {
+    return str.slice(-1) + str + str.slice(-1);
+  }
 }
 
 console.log(backAround("cat"));
@@ -220,15 +223,15 @@ console.log(backAround("cat"));
 //     }
 // }
 
-function or35(n){
-    return (n % 3 === 0 || n % 5 === 0) ? true : false;
+function or35(n) {
+  return n % 3 === 0 || n % 5 === 0 ? true : false;
 }
 
 console.log(or35(10));
 
 // Warmup 1.15
-function front22(str){
-    return str.slice(0, 2) + str + str.slice(0, 2);
+function front22(str) {
+  return str.slice(0, 2) + str + str.slice(0, 2);
 }
 
 console.log(front22("kitten"));
@@ -242,8 +245,8 @@ console.log(front22("kitten"));
 //     }
 // }
 
-function startHi(str){
-    return str.startsWith("hi");
+function startHi(str) {
+  return str.startsWith("hi");
 }
 
 console.log(startHi("there"));
@@ -257,8 +260,8 @@ console.log(startHi("there"));
 //     }
 // }
 
-function icyHot(temp1, temp2){
-    return (temp1 < 0 && temp2 > 0) || (temp1 > 0 && temp2 < 0) ? true : false;
+function icyHot(temp1, temp2) {
+  return (temp1 < 0 && temp2 > 0) || (temp1 > 0 && temp2 < 0) ? true : false;
 }
 
 console.log(icyHot(-120, 1));
@@ -272,8 +275,23 @@ console.log(icyHot(-120, 1));
 //     }
 // }
 
-function in1020(a, b){
-    return ((a >= 10 && a <= 20) || (b >= 10 && b <= 20));
+function in1020(a, b) {
+  return (a >= 10 && a <= 20) || (b >= 10 && b <= 20);
 }
 
 console.log(in1020(12, 99));
+
+// Warmup 1.19
+// function hasTeen(a, b, c){
+//     if((a >= 13 && a <= 19) || (b >= 13 && b <= 19) || (c >= 13 && c <= 19)){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+function hasTeen(a, b, c){
+    return ((a >= 13 && a <= 19) || (b >= 13 && b <= 19) || (c >= 13 && c <= 19));
+}
+
+console.log(hasTeen(13, 20, 10));
