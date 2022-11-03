@@ -335,3 +335,18 @@ function delDel(str){
 }
 
 console.log(delDel("adelbc"));
+
+// Warmup 1.22
+// function mixStart(str){
+//     if(str.slice(1, 3) === "ix"){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+function mixStart(str){
+    return str.startsWith("ix", 1);
+}
+
+console.log(mixStart("miz snacks"));
