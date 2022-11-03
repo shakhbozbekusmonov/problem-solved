@@ -290,8 +290,8 @@ console.log(in1020(12, 99));
 //     }
 // }
 
-function hasTeen(a, b, c){
-    return ((a >= 13 && a <= 19) || (b >= 13 && b <= 19) || (c >= 13 && c <= 19));
+function hasTeen(a, b, c) {
+  return (a >= 13 && a <= 19) || (b >= 13 && b <= 19) || (c >= 13 && c <= 19);
 }
 
 console.log(hasTeen(13, 20, 10));
@@ -311,8 +311,13 @@ console.log(hasTeen(13, 20, 10));
 //     return (aTeen && !bTeen) || (!aTeen && bTeen);
 // }
 
-function loneTeen(a, b){
-    return (((a >= 13 && b < 13) || (a <= 19 && b > 19)) || ((a < 13 && b >= 13) || (a > 19 && b <= 19)));
+function loneTeen(a, b) {
+  return (
+    (a >= 13 && b < 13) ||
+    (a <= 19 && b > 19) ||
+    (a < 13 && b >= 13) ||
+    (a > 19 && b <= 19)
+  );
 }
 
 console.log(loneTeen(13, 13));
@@ -326,12 +331,12 @@ console.log(loneTeen(13, 13));
 //     }
 // }
 
-function delDel(str){
-    if(str.startsWith("del", 1)){
-        return str.slice(0, 1) + str.slice(4);
-    } else {
-        return str;
-    }
+function delDel(str) {
+  if (str.startsWith("del", 1)) {
+    return str.slice(0, 1) + str.slice(4);
+  } else {
+    return str;
+  }
 }
 
 console.log(delDel("adelbc"));
@@ -345,8 +350,37 @@ console.log(delDel("adelbc"));
 //     }
 // }
 
-function mixStart(str){
-    return str.startsWith("ix", 1);
+function mixStart(str) {
+  return str.startsWith("ix", 1);
 }
 
 console.log(mixStart("miz snacks"));
+
+// Warmup 1.23
+// function startOz(str){
+//     if(str.slice(0, 2) === "oz"){
+//         return str.slice(0, 2);
+//     } else if(str.slice(0, 1) === "o"){
+//         return str.slice(0, 1);
+//     } else if(str.slice(1, 2) === "z"){
+//         return str.slice(1, 2);
+//     }
+// }
+
+// function startOz(str){
+//     return (str.slice(0, 2) === "oz") ? str.slice(0, 2) : (str.slice(0, 1) === "o") ? str.slice(0, 1) : (str.slice(1, 2) === "z") ? str.slice(1, 2) : "";
+// }
+
+function startOz(str) {
+    let result = "";
+    if (str.length >= 1 && str.charAt(0)=='o') {
+      result = result + str.charAt(0);
+    }
+
+    if (str.length >= 2 && str.charAt(1)=='z') {
+      result = result + str.charAt(1);
+    }
+    return result;
+}
+
+console.log(startOz("dzymandias"));
