@@ -420,3 +420,18 @@ function close10(a, b){
 }
 
 console.log(close10(8, 13));
+
+// Warmup 1.26
+// function in3050(a, b){
+//   if(((a >= 30 && a <= 40) && (b >= 30 && b <= 40)) || ((a >= 40 && a <= 50) && (b >= 40 && b <= 50))){
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+function in3050(a, b){
+  return (((a >= 30 && a <= 40) && (b >= 30 && b <= 40)) || ((a >= 40 && a <= 50) && (b >= 40 && b <= 50)));
+}
+
+console.log(in3050(30, 41));
