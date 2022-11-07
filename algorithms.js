@@ -401,3 +401,22 @@ function intMax(a, b, c){
 }
 
 console.log(intMax(10, 4, 11));
+
+// Warmup 1.25
+// function close10(a, b){
+//   let aMath = Math.abs(a - 10);
+//   let bMath = Math.abs(b - 10);
+//   if(aMath < bMath){
+//     return a;
+//   } else {
+//     return b;
+//   }
+// }
+
+function close10(a, b){
+  let aMath = Math.abs(a - 10);
+  let bMath = Math.abs(b - 10);
+  return (aMath < bMath) ? a : b;
+}
+
+console.log(close10(8, 13));
