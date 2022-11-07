@@ -453,3 +453,30 @@ function max1020(a, b){
 
 
 console.log(max1020(20, 19));
+
+// Warmup 1.28
+// function stringE(str){
+//   let count = 0;
+//   for(let i = 0; i < str.length; i++){
+//     if(str.charAt(i) === "e"){
+//       count++;
+//     }
+//   }
+//   if((count >= 1) && (count <= 3)){
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+function stringE(str){
+  let count = 0;
+  for(let i = 0; i < str.length; i++){
+    if(str.charAt(i) === "e"){
+      count++;
+    }
+  }
+  return ((count >= 1) && (count <= 3));
+}
+
+console.log(stringE("Hello"));
