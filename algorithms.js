@@ -384,3 +384,20 @@ function startOz(str) {
 }
 
 console.log(startOz("dzymandias"));
+
+// Warmup 1.24
+// function intMax(a, b, c){
+//   if(a > b && a > c){
+//     return a;
+//   } else if(a < b && c < b){
+//     return b;
+//   } else {
+//     return c;
+//   }
+// }
+
+function intMax(a, b, c){
+  return (a > b && a > c) ? a :(a < b && c < b) ? b : c;
+}
+
+console.log(intMax(10, 4, 11));
