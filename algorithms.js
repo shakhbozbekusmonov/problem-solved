@@ -435,3 +435,21 @@ function in3050(a, b){
 }
 
 console.log(in3050(30, 41));
+
+// Warmup 1.27
+// function max1020(a, b){
+//   if(((a >= 10 && a <= 20) || (b >= 10 && b <= 20)) && (a > b)){
+//     return a;
+//   } else if(((a >= 10 && a <= 20) || (b >= 10 && b <= 20)) && (a < b)) {
+//     return b;
+//   } else {
+//     return 0;
+//   }
+// }
+
+function max1020(a, b){
+  return (((a >= 10 && a <= 20) || (b >= 10 && b <= 20)) && (a > b)) ? a : (((a >= 10 && a <= 20) || (b >= 10 && b <= 20)) && (a < b)) ? b :  0;
+}
+
+
+console.log(max1020(20, 19));
